@@ -33,8 +33,8 @@ datadir	= /var/lib/mysql
 # Instead of skip-networking the default is now to listen only on
 # localhost which is more compatible and is not less secure.
 
-bind-address		= 0.0.0.0
-# bind-address		= 127.0.0.1
+# bind-address		= 0.0.0.0
+bind-address		= 127.0.0.1
 
 mysqlx-bind-address	= 127.0.0.1
 #
@@ -76,8 +76,8 @@ slow_query_log		= 1
 slow_query_log_file	= /data/mysql-slow.log
 # slow_query_log_file	= /var/log/mysql/mysql-slow.log
 
-long_query_time = 0
-# long_query_time = 2
+# long_query_time = 0
+long_query_time = 2
 
 
 # log-queries-not-using-indexes
