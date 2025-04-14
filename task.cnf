@@ -15,14 +15,16 @@
 #
 # * Basic Settings
 #
-user		= mysql
+# user = root
+user = mysql
+
 # pid-file	= /var/run/mysqld/mysqld.pid
 # socket	= /var/run/mysqld/mysqld.sock
 
-port		= 3306
+port		= 3000
 # port		= 443
 
-datadir	= /var/lib/mysql
+datadir	= /data
 # datadir	= /var/data/mysql
 
 
@@ -67,7 +69,7 @@ max_connections        = 5
 #
 # Error log - should be very few entries.
 #
-log_error = /var/log/mysql/error.log
+#log_error = /var/log/mysql/error.log
 #
 # Here you can see queries with especially long duration
 
