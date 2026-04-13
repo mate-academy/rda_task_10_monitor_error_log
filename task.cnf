@@ -20,7 +20,7 @@ user		= mysql
 # socket	= /var/run/mysqld/mysqld.sock
 
 port		= 3306
-# port		= 443
+# port		= 443 https port. 0-1024 ports are reserved for special needs
 
 datadir	= /var/lib/mysql
 # datadir	= /var/data/mysql
@@ -39,8 +39,7 @@ bind-address		= 0.0.0.0
 mysqlx-bind-address	= 127.0.0.1
 #
 # * Fine Tuning
-#
-key_buffer_size		= 16M
+
 # max_allowed_packet	= 64M
 # thread_stack		= 256K
 
@@ -50,7 +49,7 @@ key_buffer_size		= 16M
 # the first time they are touched
 myisam-recover-options  = BACKUP
 
-max_connections        = 5
+max_connections      = 5
 # max_connections        = 151
 
 # table_open_cache       = 4000
@@ -71,10 +70,10 @@ log_error = /var/log/mysql/error.log
 #
 # Here you can see queries with especially long duration
 
-slow_query_log		= 1
+slow_query_log = 1
 
-slow_query_log_file	= /data/mysql-slow.log
-# slow_query_log_file	= /var/log/mysql/mysql-slow.log
+# slow_query_log_file	= /data/mysql-slow.log this path is uncommon
+slow_query_log_file	= /var/log/mysql/mysql-slow.log
 
 long_query_time = 0
 # long_query_time = 2
