@@ -15,8 +15,8 @@
 #
 # * Basic Settings
 #
-# user = mysql
-user		= root
+user = mysql
+# user		= root
 # pid-file	= /var/run/mysqld/mysqld.pid
 # socket	= /var/run/mysqld/mysqld.sock
 
